@@ -8,9 +8,9 @@ search-adaccount -usersonly -accountinactive -timespan 60.00:00:00 | Out-File -F
 search-adaccount -usersonly -accountinactive -timespan 60.00:00:00 | Disable-Adaccount
 
 #Search AD for computers that have been inactive for 8 weeks and output the results to a text file.
-dsquery computer -inactive 26 | Out-File -FilePath c:\admin\InactiveComputers8Weeks.txt
+dsquery computer -inactive 8 | Out-File -FilePath c:\admin\InactiveComputers8Weeks.txt
 
 #Disable computer accounts that have been inactive for 8 weeks or more.
-dsquery computer -inactive 26 | dsrm -noprompt -subtree
+dsquery computer -inactive 8 | dsrm -noprompt -subtree
 
 
