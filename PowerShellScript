@@ -1,3 +1,6 @@
+<#Constantly evolving PS script to audit and fix AD Security issues. I know many tools can already do these things, but the point
+of this is for me to write the code myself, and get a better understanding of working in AD through PS.#>
+
 #Import AD Module
 import-module activedirectory
 
